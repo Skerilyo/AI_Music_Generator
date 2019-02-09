@@ -108,7 +108,7 @@ class Train_Neural_Network:
         model.fit(input, output, epochs=100, batch_size=4, callbacks=callbacks_list)
 
 class Generate_Neural_Network:
-    def __init__(self, input):
+    def __init__(self):
         with open('data/notes', 'rb') as filepath:
             self.notes = pickle.load(filepath)
         self.n_notes = len(set(self.notes))
